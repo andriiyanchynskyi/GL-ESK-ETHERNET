@@ -270,6 +270,7 @@ void     BSP_LED_On(Led_TypeDef Led);
 void     BSP_LED_Off(Led_TypeDef Led);
 void     BSP_LED_Toggle(Led_TypeDef Led);
 void     BSP_PB_Init(Button_TypeDef Button, ButtonMode_TypeDef Mode);
+uint8_t BSP_LED_ReadPinState(Led_TypeDef Led);
 uint32_t BSP_PB_GetState(Button_TypeDef Button);
 
 /**

@@ -214,6 +214,19 @@ void BSP_LED_Toggle(Led_TypeDef Led)
 }
 
 /**
+  * @brief  Read state of the the selected LED.
+  * @param  Led: Specifies the Led to read the current state.
+  *   This parameter can be one of following parameters:
+  *     @arg LED4
+  *     @arg LED3
+  *     @arg LED5
+  *     @arg LED6
+  */
+uint8_t BSP_LED_ReadPinState(Led_TypeDef Led)
+{
+	return HAL_GPIO_ReadPin(GPIO_PORT[Led], GPIO_PIN[Led]);
+}
+/**
   * @}
   */ 
 
